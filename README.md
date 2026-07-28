@@ -30,6 +30,7 @@ Original project is [Feishin](https://github.com/jeffvli/feishin) by [jeffvli](h
 - [x] Smart playlist editor (Navidrome)
 - [x] Synchronized and unsynchronized lyrics support
 - [ ] Animated covers
+- [ ] Optimistic caching (static covers, animated covers, musics)
 - [ ] Smart playlists auto creation
 - [ ] Listening stats with precision
 - [ ] Connect feature (*Spotify Connect* like) to take control of clients of the same account all around the network
