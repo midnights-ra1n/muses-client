@@ -1,35 +1,25 @@
-<img src="assets/icons/icon.png" alt="logo" title="feishin" align="right" height="60px" width="60px" />
+<img src="assets/icons/icon.png" alt="logo" title="muses-client" align="right" height="60px" width="60px" />
 
 # Feishin
 
   <p align="center">
-    <a href="https://github.com/jeffvli/feishin/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/jeffvli/feishin?style=flat-square&color=brightgreen"
+    <a href="https://github.com/midnights-ra1n/muses-client/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/midnights-ra1n/muses-client?style=flat-square&color=brightgreen"
       alt="License">
     </a>
-      <a href="https://github.com/jeffvli/feishin/releases">
-      <img src="https://img.shields.io/github/v/release/jeffvli/feishin?style=flat-square&color=blue"
+      <a href="https://github.com/midnights-ra1n/muses-client/releases">
+      <img src="https://img.shields.io/github/v/release/midnights-ra1n/muses-client?style=flat-square&color=blue"
       alt="Release">
     </a>
-    <a href="https://github.com/jeffvli/feishin/releases">
-      <img src="https://img.shields.io/github/downloads/jeffvli/feishin/total?style=flat-square&color=orange"
-      alt="Downloads">
-    </a>
-  </p>
-  <p align="center">
-    <a href="https://discord.gg/FVKpcMDy5f">
-      <img src="https://img.shields.io/discord/922656312888811530?color=black&label=discord&logo=discord&logoColor=white"
-      alt="Discord">
-    </a>
-    <a href="https://matrix.to/#/#sonixd:matrix.org">
-      <img src="https://img.shields.io/matrix/sonixd:matrix.org?color=black&label=matrix&logo=matrix&logoColor=white"
-      alt="Matrix">
-    </a>
+    
   </p>
 
 ---
 
-Rewrite of [Sonixd](https://github.com/jeffvli/sonixd).
+A modern rewrite and customization of original [Feishin](https://github.com/jeffvli/feishin) client to be more Spotify like.
+
+
+Original project is [Feishin](https://github.com/jeffvli/feishin) by [jeffvli](https://github.com/jeffvli). So thank you for your great work!
 
 ## Features
 
@@ -39,7 +29,11 @@ Rewrite of [Sonixd](https://github.com/jeffvli/sonixd).
 - [x] Scrobble playback to your server
 - [x] Smart playlist editor (Navidrome)
 - [x] Synchronized and unsynchronized lyrics support
-- [ ] [Request a feature](https://github.com/jeffvli/feishin/issues) or [view taskboard](https://github.com/users/jeffvli/projects/5/views/1)
+- [ ] Animated covers
+- [ ] Smart playlists auto creation
+- [ ] Listening stats with precision
+- [ ] Connect feature (*Spotify Connect* like) to take control of clients of the same account all around the network
+- [ ] [Request a feature](https://github.com/midnights-ra1n/muses-client/issues) or [view taskboard](https://github.com/users/midnights-ra1n/projects/3)
 
 ## Screenshots
 
@@ -49,19 +43,21 @@ Rewrite of [Sonixd](https://github.com/jeffvli/sonixd).
 
 ### Desktop (recommended)
 
-Download the [latest desktop client](https://github.com/jeffvli/feishin/releases). The desktop client is the recommended way to use Feishin. It supports both the MPV and web player backends, as well as includes built-in fetching for lyrics.
+Download the [latest desktop client](https://github.com/midnights-ra1n/muses-client/releases). The desktop client is the recommended way to use Feishin. It supports both the MPV and web player backends, as well as includes built-in fetching for lyrics.
 
 #### macOS Notes
 
-If you're using a device running macOS 12 (Monterey) or higher, [check here](https://github.com/jeffvli/feishin/issues/104#issuecomment-1553914730) for instructions on how to remove the app from quarantine.
+If you're using a device running macOS 12 (Monterey) or higher, [check here](https://github.com/midnights-ra1n/muses-client/issues/104#issuecomment-1553914730) for instructions on how to remove the app from quarantine.
 
 For media keys to work, you will be prompted to allow Feishin to be a Trusted Accessibility Client. After allowing, you will need to restart Feishin for the privacy settings to take effect.
 
 #### Linux Notes
 
-Feishin is available in [Flathub](https://flathub.org/en/apps/org.jeffvli.feishin).
+Muses isn't available on Flathub or Snap Store for now.
 
-Alternatively, you can install it as an Appimage. We provide a small install script to download the latest `.AppImage`, make it executable, and also download the icons required by Desktop Environments. Finally, it generates a `.desktop` file to add Feishin to your Application Launcher.
+Alternatively, you can install it as an AppImage. I provide a small install script to download the latest `.AppImage`, make it executable, and also download the icons required by Desktop Environments. Finally, it generates a `.desktop` file to add Muses to your Application Launcher.
+
+Also I provide `deb` and `rpm` packages. 
 
 Simply run the installer like this:
 
@@ -154,7 +150,7 @@ First thing to do is check that your MPV binary path is correct. Navigate to the
 Feishin supports any music server that implements a [Navidrome](https://www.navidrome.org/), [Jellyfin](https://jellyfin.org/), or [OpenSubsonic compatible](https://opensubsonic.netlify.app/) API.
 
 - [Navidrome](https://github.com/navidrome/navidrome)
-- [Jellyfin](https://github.com/jellyfin/jellyfin)
+- [Jellyfin](https://github.com/jellyfin/jellyfin) **Warning: Jellyfin will be removed because I want Muses will be focused only on music app. Jellyfin is also great to listening music but Navidrome is best.**
 - [OpenSubsonic](https://opensubsonic.netlify.app/) compatible servers, such as...
     - [Airsonic-Advanced](https://github.com/airsonic-advanced/airsonic-advanced)
     - [Ampache](https://ampache.org)
@@ -167,8 +163,8 @@ Feishin supports any music server that implements a [Navidrome](https://www.navi
     - [Qm-Music](https://github.com/chenqimiao/qm-music)
     - More (?)
 
-- [Plex](https://www.plex.tv/media-server-downloads)
-    - [Feishin fork by lux032](https://github.com/lux032/feishin) - Plex is not natively supported. Use the fork by lux032 to use Plex with Feishin.
+- [Plex](https://www.plex.tv/media-server-downloads) **This integration will be also removed.**
+    - [Feishin fork by lux032](https://github.com/lux032/feishin) - Plex is not natively supported. Use the fork by lux032 to use Plex with Feishin. 
 
 ### I have the issue "The SUID sandbox helper binary was found, but is not configured correctly" on Linux
 
