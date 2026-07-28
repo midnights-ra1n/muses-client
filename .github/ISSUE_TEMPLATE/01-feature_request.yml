@@ -1,5 +1,5 @@
 name: Feature request
-description: Request a feature to be added to Feishin
+description: Request a feature to be added to Muses Client
 title: '[Feature]: '
 labels: ['enhancement']
 body:
@@ -18,7 +18,6 @@ body:
           options:
               - Not server-specific
               - OpenSubsonic
-              - Jellyfin
               - Navidrome
           default: 0
       validations:
