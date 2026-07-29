@@ -1,3 +1,8 @@
+# Archived repo
+
+This project won't go ahead because, after some thought, I decided to build my own application from scratch. [Feishin](https://github.com/jeffvli/feishin) is great, but I feel there is room for improvement specifically by moving away from Electron, which I find performs poorly in terms of optimization. Furthermore, certain features like API-driven animated album art won't be added, and I’m unsure if caching actually works (or even exists) for music and album art; that is precisely the kind of thing that needs optimizing.
+That is why I decided to write [Resonia](https://github.com/midnights-ra1n/resonia-client), a desktop and web client built with TypeScript, React, Vite, Tailwind CSS, and Tauri (Rust). I chose these frameworks to create something simpler and more optimized. I also plan to develop a mobile version using Flutter, though I won't be rushing into that right away. For now, I am handling the development of this "self-hosted Spotify" ecosystem entirely on my own.
+
 <img src="assets/icons/icon.png" alt="logo" title="muses-client" align="right" height="60px" width="60px" />
 
 # Feishin
